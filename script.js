@@ -1,9 +1,6 @@
 (() => {
-    const TARGET_WIDTH = 1280;
-    const TARGET_HEIGHT = 593;
-    const TOLERANCE = 100;
     setInterval(() => {
-        if (Math.abs(window.innerWidth - TARGET_WIDTH) > TOLERANCE || Math.abs(window.innerHeight - TARGET_HEIGHT) > TOLERANCE) {
+        if (!(window.innerWidth === 1280 && window.innerHeight === 593)) {
             alert("Cảnh báo: Phát hiện hành vi can thiệp hệ thống qua Console DevTools!");
             window.location.reload();
         }
