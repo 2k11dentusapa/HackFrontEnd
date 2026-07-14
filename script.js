@@ -1,6 +1,6 @@
 (() => {
     const TARGET_WIDTH = 1280;
-    const TARGET_HEIGHT = 720;
+    const TARGET_HEIGHT = 593;
     const TOLERANCE = 100;
     setInterval(() => {
         if (Math.abs(window.innerWidth - TARGET_WIDTH) > TOLERANCE || Math.abs(window.innerHeight - TARGET_HEIGHT) > TOLERANCE) {
